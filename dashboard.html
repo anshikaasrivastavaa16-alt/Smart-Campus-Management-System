@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Campus - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <h1>Smart Campus</h1>
+
+        <h2>Student Dashboard</h2>
+
+        <p id="welcomeMessage">Welcome to your Smart Campus Dashboard!</p>
+    
+<!-- STUDENT PROFILE SECTION -->
+
+<div class="profile-card">
+    
+<div class="profile-icon">
+    <img id="profilePhoto" src="" alt="Student Profile Photo" style="display: none;">
+
+    <span id="defaultProfileIcon">👤</span>
+</div>
+
+<input type="file" id="photoUpload" accept="image/*">
+
+<button type="button" id="removePhoto">Remove Photo</button>
+    <div class="profile-details">
+        <h3>Student Profile</h3>
+
+        <p><strong>Name:</strong> <span id="profileName">Student</span></p>
+
+        <p><strong>Email:</strong> <span id="profileEmail">Not available</span></p>
+
+        <!-- EDIT PROFILE BUTTON -->
+        <button id="editProfileButton" type="button">
+            ✏️ Edit Profile
+        </button>
+        
+<button id="changePasswordButton" type="button">
+    🔐 Change Password
+</button>
+
+
+    </div>
+</div>
+
+
+          
+        <div class="quick-summary">
+
+    <div class="summary-card">
+        <h3>📊 Attendance</h3>
+        <p id="dashboardAttendance">85%</p>
+    </div>
+
+    <div class="summary-card">
+        <h3>📝 Assignments</h3>
+        <p id="pendingAssignments">2 Pending</p>
+    </div>
+
+    <div class="summary-card">
+        <h3>📚 Subjects</h3>
+        <p id="subjectCount">4 Subjects</p>
+    </div>
+
+    <div class="summary-card">
+        <h3>🔔 Notices</h3>
+        <p id="newNotices">3 New</p>
+    </div>
+
+</div>
+        <div class="dashboard-cards">
+
+           <a href="attendance.html" class="dashboard-link">
+
+           <div class="dashboard-card">
+             <h3>Attendance</h3>
+              <p>Check your attendance</p>
+            </div>
+
+        </a>
+        <a href="assignments.html" class="dashboard-link">
+            <div class="dashboard-card">
+                <h3>Assignments</h3>
+                <p>View your assignments</p>
+            </div>
+        </a>
+
+            <a href="notes.html" class="dashboard-link">
+
+    <div class="dashboard-card">
+        <h3>Notes</h3>
+        <p>Access your study notes</p>
+    </div>
+
+        </a>
+
+            <a href="timetable.html" class="dashboard-link">
+
+    <div class="dashboard-card">
+        <h3>Timetable</h3>
+        <p>View your class timetable</p>
+    </div>
+
+</a>
+
+      <a href="results.html" class="dashboard-link">
+
+    <div class="dashboard-card">
+        <h3>Results</h3>
+        <p>Check your results</p>
+    </div>
+
+</a>
+
+       <a href="notices.html" class="dashboard-link">
+
+    <div class="dashboard-card">
+        <h3>Notices</h3>
+        <p>View campus notices</p>
+    </div>
+
+</a>     
+
+        </div>
+
+        <button id="logoutButton">Logout</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

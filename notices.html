@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Campus - Notices</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="notices-container">
+
+        <h1>Smart Campus</h1>
+
+        <h2>Campus Notices</h2>
+
+        <div class="notice-card">
+
+            <h3>Semester Examination Notice</h3>
+
+            <p id="examNotice" style="display: none;">
+        Students should check their examination timetable and reach the examination hall on time.
+    </p>
+
+    <p>Date: 27 September 2026</p>
+
+    <button onclick="toggleNotice('examNotice', this)">
+        Read More
+
+    </button>
+
+
+        </div>
+
+        <div class="notice-card">
+
+            <h3>Assignment Submission</h3>
+
+            <p>
+                Students are requested to submit their pending assignments before the due date.
+            </p>
+
+            <p id="assignmentNotice" style="display: none;">
+          Please make sure your assignment is submitted before the deadline.
+         </p>
+
+         <button onclick="toggleNotice('assignmentNotice', this)">
+         Read More
+         </button>
+
+            <p>Date: 25 September 2026</p>
+
+        </div>
+
+        <div class="notice-card">
+
+            <h3>College Event</h3>
+
+            <p>
+                Annual college cultural event will be organized next month.
+            </p>
+
+            <p id="eventNotice" style="display: none;">
+           Students can participate in cultural activities and events. More details will be announced soon.
+           </p>
+
+          <button onclick="toggleNotice('eventNotice', this)">
+         Read More
+         </button>
+
+            <p>Date: 20 September 2026</p>
+
+        </div>
+
+        <button id="backToDashboard">Back to Dashboard</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
